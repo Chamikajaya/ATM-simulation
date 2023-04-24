@@ -24,6 +24,10 @@ public class Simulation {
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
+                    System.out.println("Your balance is " + atm.seeBalance(accountNumber));
+                    break;
+              
+                case 2:
                     System.out.println("Please enter the amount to withdraw:");
                     amount = scanner.nextDouble();
                     if (atm.withdraw(accountNumber, amount)) {
@@ -32,15 +36,14 @@ public class Simulation {
                         System.out.println("Withdrawal failed. Insufficient balance.");
                     }
                     break;
-                case 2:
+                    
+                case 3:
                     System.out.println("Please enter the amount to deposit:");
                     amount = scanner.nextDouble();
                     atm.deposit(accountNumber, amount);
                     System.out.println("Deposit successful. Your new balance is " + atm.seeBalance(accountNumber));
                     break;
-                case 3:
-                    System.out.println("Your balance is " + atm.seeBalance(accountNumber));
-                    break;
+                    
                 case 4:
                     System.out.println("Thank you for using our ATM. Goodbye!");
                     System.exit(0);
