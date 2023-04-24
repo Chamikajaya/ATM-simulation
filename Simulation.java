@@ -17,16 +17,16 @@ public class Simulation {
         double amount;
         while (true) {
             System.out.println("Please select an option:");
-            System.out.println("1. Withdraw");
-            System.out.println("2. Deposit");
-            System.out.println("3. Check balance");
+            System.out.println("1. Check balance");
+            System.out.println("2. Withdraw");
+            System.out.println("3. Deposit ");
             System.out.println("4. Exit");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
                     System.out.println("Your balance is " + atm.seeBalance(accountNumber));
                     break;
-              
+
                 case 2:
                     System.out.println("Please enter the amount to withdraw:");
                     amount = scanner.nextDouble();
@@ -36,14 +36,14 @@ public class Simulation {
                         System.out.println("Withdrawal failed. Insufficient balance.");
                     }
                     break;
-                    
+
                 case 3:
                     System.out.println("Please enter the amount to deposit:");
                     amount = scanner.nextDouble();
                     atm.deposit(accountNumber, amount);
                     System.out.println("Deposit successful. Your new balance is " + atm.seeBalance(accountNumber));
                     break;
-                    
+
                 case 4:
                     System.out.println("Thank you for using our ATM. Goodbye!");
                     System.exit(0);
