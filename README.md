@@ -1,18 +1,46 @@
-# ATM-simulation
-My submission for ATM project using Java and OOP concepts
-Summary:
-Suppose you are asked to simulate an ATM for ABC Bank. For each client, ABC Bank keeps a record of the client’s id, name, nationality, occupation, address, age, and gender. A client should obtain a PIN (Personal Identification Number) to access the ATM. ABC offers saving accounts, current accounts, and loans for its clients. A client can have multiple bank accounts. Each account has an account number, the currency in which the account is operated, the branch, and the balance. The bank pays interest for saving accounts. ABC has a restriction that all the accounts of a given client should be operated in a single currency. A client with any bank account can request a loan, and a loan is linked to an account. A loan has the amount, interest, duration, and payment method.
+# ABC Bank ATM Simulation
 
-Using the ATM, the clients of ABC Bank can do many transactions. Each transaction is recorded with a transaction id, bank account id, date, and status (if the transaction is a success, failure, or cancellation). The possible transactions are deposits, withdrawals, and balance inquiries. The transaction amount should be recorded for deposits and withdrawals, whereas the balance should be recorded for balance inquiries.
+Welcome to the ABC Bank ATM simulation project! This Java-based project leverages object-oriented programming (OOP) concepts to create a virtual ATM system for ABC Bank. This system allows clients to perform various banking transactions, manage their accounts, and access their funds securely. 
 
-Upon visiting the website of the ABC ATM, the client should experience the following sequence of events.
+## Table of Contents
 
-First of all the client is shown “Welcome!” and asked to enter the PIN.
-Then the client is shown his accounts in ABC Bank and asked to select one account to proceed.
-Then the client is shown the main menu below:
-Main Menu
-View Balance.
-Withdraw money.
-Deposit money.
-Exit.
-The client will enter the choice. If Option 2 or 3 is selected, the client will be asked to enter the amount, and once the transaction is completed, the remaining balance should be displaced.
+- [Project Overview](#project-overview)
+- [Client and Account Information](#client-and-account-information)
+- [Transactions](#transactions)
+- [User Experience](#user-experience)
+
+
+
+## Project Overview
+
+ABC Bank's ATM project aims to provide a seamless banking experience to its clients. Here's an overview of the key features and functionalities:
+
+### Client and Account Information
+
+- Clients have unique IDs and personal details, including name, nationality, occupation, address, age, and gender.
+- Each client is assigned a Personal Identification Number (PIN) for ATM access.
+- Clients can hold multiple bank accounts.
+- Account details include account numbers, operating currencies, branch information, and balances.
+- Saving accounts accrue interest, and all client accounts must operate in a single currency.
+- Clients can request loans, which are linked to their accounts and include loan amount, interest rate, duration, and payment method.
+
+### Transactions
+
+- All transactions are recorded with a unique transaction ID, account ID, date, and status (success, failure, or cancellation).
+- Supported transactions include deposits, withdrawals, and balance inquiries.
+- Deposit and withdrawal transactions record the transaction amount.
+- Balance inquiries display the account balance.
+
+### User Experience
+
+Upon accessing the ABC Bank ATM:
+
+1. Clients are greeted with a "Welcome!" message and prompted to enter their PIN.
+2. Clients view their accounts and select one to proceed.
+3. Clients are presented with the main menu options:
+   - View Balance
+   - Withdraw Money
+   - Deposit Money
+   - Exit
+4. Clients choose an option, and if it involves a transaction, they are asked to enter the amount. After completing the transaction, the remaining balance is displayed.
+
